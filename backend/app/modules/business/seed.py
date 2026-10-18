@@ -1,0 +1,152 @@
+"""Shops that already sit on the city map. Onboarding adds more beside these."""
+
+from app.modules.civic.seed import W1, W2, W3
+from app.modules.media.swatch import data_url
+
+CATEGORY_LABEL = {
+    "grocery": "Grocery",
+    "restaurant": "Restaurant",
+    "pharmacy": "Pharmacy",
+    "services": "Services",
+    "general": "General store",
+}
+
+DEMO_SHOPS = [
+    {
+        "id": "55555555-5555-4555-8555-555555555501",
+        "slug": "neem-kirana",
+        "name": "Neem Kirana",
+        "category": "grocery",
+        "ward_id": W1,
+        "address_text": "14 Park Road",
+        "phone": "080-4001-2201",
+        "opening_hours": "7:00–21:00",
+        "about": "Daily groceries beside Neem Park. The counter code opens this shelf list.",
+        "latitude": 12.9706,
+        "longitude": 77.5956,
+        "catalog": [
+            {
+                "id": "66666666-6666-4666-8666-666666666601",
+                "name": "Sona masuri rice",
+                "description": "1 kg",
+                "price_paise": 6200,
+                "is_available": True,
+                "image": data_url((232, 201, 120), (176, 132, 58)),
+            },
+            {
+                "id": "66666666-6666-4666-8666-666666666602",
+                "name": "Toned milk",
+                "description": "500 ml",
+                "price_paise": 2800,
+                "is_available": True,
+                "image": data_url((236, 244, 252), (90, 140, 196)),
+            },
+            {
+                "id": "66666666-6666-4666-8666-666666666603",
+                "name": "Whole wheat atta",
+                "description": "5 kg",
+                "price_paise": 24500,
+                "is_available": True,
+                "image": data_url((214, 176, 122), (138, 90, 42)),
+            },
+        ],
+    },
+    {
+        "id": "55555555-5555-4555-8555-555555555502",
+        "slug": "lake-view-tiffin",
+        "name": "Lake View Tiffin",
+        "category": "restaurant",
+        "ward_id": W2,
+        "address_text": "3 Promenade",
+        "phone": "080-4001-2202",
+        "opening_hours": "7:00–15:00, 18:00–22:00",
+        "about": "Tiffin and filter coffee on the lake road. The menu on this page is what the kitchen is serving.",
+        "latitude": 12.9822,
+        "longitude": 77.6172,
+        "catalog": [
+            {
+                "id": "66666666-6666-4666-8666-666666666611",
+                "name": "Idli plate",
+                "description": "Two idli, chutney, sambar",
+                "price_paise": 4000,
+                "is_available": True,
+                "image": data_url((248, 236, 214), (196, 92, 48)),
+            },
+            {
+                "id": "66666666-6666-4666-8666-666666666612",
+                "name": "Masala dosa",
+                "description": "With chutney and sambar",
+                "price_paise": 7000,
+                "is_available": True,
+                "image": data_url((236, 196, 112), (120, 72, 32)),
+            },
+            {
+                "id": "66666666-6666-4666-8666-666666666613",
+                "name": "Filter coffee",
+                "description": "Single",
+                "price_paise": 2000,
+                "is_available": True,
+                "image": data_url((92, 56, 36), (212, 176, 128)),
+            },
+        ],
+        "services": [
+            {
+                "id": "77777777-7777-4777-8777-777777777711",
+                "name": "Event catering",
+                "description": "Tiffin for 20 or more, order a day ahead",
+                "price_paise": None,
+                "duration_minutes": None,
+                "is_available": True,
+            },
+        ],
+    },
+    {
+        "id": "55555555-5555-4555-8555-555555555503",
+        "slug": "market-medicals",
+        "name": "Market Medicals",
+        "category": "pharmacy",
+        "ward_id": W3,
+        "address_text": "9 Bazaar Lane",
+        "phone": "080-4001-2203",
+        "opening_hours": "8:00–22:00",
+        "about": "A neighbourhood pharmacy. Ask the counter for anything that is not on this list.",
+        "latitude": 12.9638,
+        "longitude": 77.5780,
+        "catalog": [
+            {
+                "id": "66666666-6666-4666-8666-666666666621",
+                "name": "Paracetamol 500 mg",
+                "description": "Strip of 10",
+                "price_paise": 1800,
+                "is_available": True,
+                "image": data_url((232, 244, 236), (46, 140, 92)),
+            },
+            {
+                "id": "66666666-6666-4666-8666-666666666622",
+                "name": "ORS sachet",
+                "description": "One sachet",
+                "price_paise": 2200,
+                "is_available": True,
+                "image": data_url((224, 236, 252), (48, 104, 176)),
+            },
+        ],
+        "services": [
+            {
+                "id": "77777777-7777-4777-8777-777777777721",
+                "name": "Blood pressure check",
+                "description": "At the counter, no appointment needed",
+                "price_paise": 5000,
+                "duration_minutes": 10,
+                "is_available": True,
+            },
+            {
+                "id": "77777777-7777-4777-8777-777777777722",
+                "name": "Home delivery",
+                "description": "Within the ward, on prescription",
+                "price_paise": None,
+                "duration_minutes": None,
+                "is_available": True,
+            },
+        ],
+    },
+]

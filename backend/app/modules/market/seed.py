@@ -1,0 +1,73 @@
+from app.modules.civic.seed import W1, W2, W3
+
+DEMO_LISTINGS = [
+    {
+        "id": "demo0000000000000000000000000drum",
+        "seller_id": "demo-seller-ravi",
+        "seller_name": "Ravi",
+        "ward_id": W1,
+        "title": "Steel water drum",
+        "description": "40 litre, no dents. Lid seals well.",
+        "category": "home",
+        "condition": "good",
+        "price_paise": 45000,
+        "quantity": 1,
+        "pickup_area": "Park Road, Gandhi Nagar",
+    },
+    {
+        "id": "demo000000000000000000000000table",
+        "seller_id": "demo-seller-anita",
+        "seller_name": "Anita",
+        "ward_id": W2,
+        "title": "Study table",
+        "description": "Solid wood with one drawer. Buyer collects.",
+        "category": "furniture",
+        "condition": "like_new",
+        "price_paise": 180000,
+        "quantity": 1,
+        "pickup_area": "Lake View, near the promenade",
+    },
+    {
+        "id": "demo00000000000000000000000000fan",
+        "seller_id": "demo-seller-imran",
+        "seller_name": "Imran",
+        "ward_id": W3,
+        "title": "Ceiling fan",
+        "description": "Used one season and still working. Comes with the canopy.",
+        "category": "electronics",
+        "condition": "good",
+        "price_paise": 90000,
+        "quantity": 1,
+        "pickup_area": "Market Yard gate",
+    },
+    {
+        "id": "demo000000000000000000000000pickle",
+        "seller_id": "demo-seller-imran",
+        "seller_name": "Imran",
+        "ward_id": W3,
+        "title": "Homemade mango pickle",
+        "description": "500 g glass jar, made this summer. Medium spicy.",
+        "category": "homemade",
+        "condition": "new",
+        "price_paise": 22000,
+        "quantity": 12,
+        "pickup_area": "Market Yard gate",
+    },
+]
+
+DEMO_REVIEWS = [
+    {
+        "listing_id": "demo000000000000000000000000pickle",
+        "reviewer_id": "demo-buyer-kiran",
+        "reviewer_name": "Kiran",
+        "rating": 5,
+        "comment": "Tastes like home. Picked it up the same evening.",
+    },
+    {
+        "listing_id": "demo000000000000000000000000pickle",
+        "reviewer_id": "demo-buyer-lata",
+        "reviewer_name": "Lata",
+        "rating": 4,
+        "comment": "Good flavour, a little too much oil for me.",
+    },
+]
